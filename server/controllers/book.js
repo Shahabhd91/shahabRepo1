@@ -50,7 +50,7 @@ module.exports.displayEditPage = (req, res, next) => {
         }
         else {
             //show edit view
-            res.redirect('book/edit', { title: 'Edit Book', book: bookToEdit });
+            res.render('book/edit', { title: 'Edit Book', book: bookToEdit });
         }
     })
 }
