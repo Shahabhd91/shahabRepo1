@@ -1,0 +1,40 @@
+<%-include partials/header.ejs%>
+    <%-include partials/main_nav.ejs%>
+
+        <h1 class="container-fluid text-center text-white" id="tbl">
+            <%= title %>
+        </h1>
+
+        <p class="container-fluid text-center text-dark text-capitalize" id="tbl">write your message in the form below
+        </p>
+
+
+        <form action="/home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm" id="info">
+                        <p>Contact me:
+                            <br>
+                            <br>
+                            <b><i class="fa-sharp fa-solid fa-phone"></i><b> Phone Number:647-657-8996 </b><br><br><i
+                                    class="fa-solid fa-envelope"></i><b> Email:Shahab.Heidari91@gmail.com</b></b>
+                        </p>
+                    </div>
+                    <div class="col-sm" id="contact">
+                        <input type="text" id="fname" name="fname" placeholder="First Name:">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                        <input type="email" id="email" name="email" placeholder="Email" size="50"><br><br>
+                        <textarea id="msg" name="msg" rows="5" cols="60">
+               Please Write your message here...
+            </textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </form>
+
+        <%-include partials/bottom_nav.ejs%>
+            <%-include partials/footer.ejs%>
