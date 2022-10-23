@@ -2,6 +2,8 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
+let jwt = require('jsonwebtoken');
+
 // Create a refrence to the model
 let Book = require('../models/book');
 
@@ -12,7 +14,11 @@ module.exports.displayBooklist = (req, res, next) => {
         }
         else {
             //console.log(BookList);
-            res.render('book/list', { title: 'Books', BookList: bookList });
+            res.render('book/list',
+                {
+                    title: 'Books',
+                    BookList: bookList, displayName: req.user ? req.user.displayName : ''
+                });
         }
     });
 }
@@ -50,7 +56,10 @@ module.exports.displayEditPage = (req, res, next) => {
         }
         else {
             //show edit view
-            res.render('book/edit', { title: 'Edit Book', book: bookToEdit });
+            res.render('book/edit', {
+                title: 'Edit Book', book: bookToEdit,
+                displayName: req.user ? req.user.displayName : ''
+            });
         }
     })
 }
