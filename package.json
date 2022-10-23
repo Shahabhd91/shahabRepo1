@@ -47,12 +47,12 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shahabhd91/shahabRepo1.git"
+    "url": "git+https://github.com/Shahabhd91/Assignment2.git"
   },
   "author": "shahab heidari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Shahabhd91/shahabRepo1/issues"
+    "url": "https://github.com/Shahabhd91/Assignment2/issues"
   },
-  "homepage": "https://github.com/Shahabhd91/shahabRepo1#readme"
+  "homepage": "https://github.com/Shahabhd91/Assignment2#readme"
 }
